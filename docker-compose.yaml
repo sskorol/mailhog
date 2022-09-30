@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  mail:
+    image: sskorol/mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    expose:
+      - 1025
+    networks:
+      - local
+
+networks:
+  local:
+    driver: bridge
