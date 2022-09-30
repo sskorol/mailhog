@@ -6,12 +6,12 @@ import (
 	"os"
 
 	"github.com/ian-kent/go-log/log"
-	comcfg "github.com/ynori7/mailhog/config"
-	"github.com/ynori7/mailhog/http"
-	"github.com/ynori7/mailhog/server/api"
-	"github.com/ynori7/mailhog/server/config"
-	"github.com/ynori7/mailhog/server/smtp"
-	"github.com/ynori7/mailhog/ui/assets"
+	comcfg "github.com/sskorol/mailhog/config"
+	"github.com/sskorol/mailhog/http"
+	"github.com/sskorol/mailhog/server/api"
+	"github.com/sskorol/mailhog/server/config"
+	"github.com/sskorol/mailhog/server/smtp"
+	"github.com/sskorol/mailhog/ui/assets"
 )
 
 var (

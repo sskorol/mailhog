@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ynori7/mailhog/data"
+	"github.com/sskorol/mailhog/data"
 )
 
 func TestStore(t *testing.T) {

@@ -9,22 +9,22 @@ import (
 
 	"github.com/gorilla/pat"
 	"github.com/ian-kent/go-log/log"
-	cfgcom "github.com/ynori7/mailhog/config"
-	"github.com/ynori7/mailhog/http"
-	"github.com/ynori7/mailhog/sendmail/cmd"
-	"github.com/ynori7/mailhog/server/api"
-	cfgapi "github.com/ynori7/mailhog/server/config"
-	"github.com/ynori7/mailhog/server/smtp"
-	"github.com/ynori7/mailhog/ui/assets"
-	cfgui "github.com/ynori7/mailhog/ui/config"
-	"github.com/ynori7/mailhog/ui/web"
+	cfgcom "github.com/sskorol/mailhog/config"
+	"github.com/sskorol/mailhog/http"
+	"github.com/sskorol/mailhog/sendmail/cmd"
+	"github.com/sskorol/mailhog/server/api"
+	cfgapi "github.com/sskorol/mailhog/server/config"
+	"github.com/sskorol/mailhog/server/smtp"
+	"github.com/sskorol/mailhog/ui/assets"
+	cfgui "github.com/sskorol/mailhog/ui/config"
+	"github.com/sskorol/mailhog/ui/web"
 	"golang.org/x/crypto/bcrypt"
 )
 
 var (
-	apiconf          *cfgapi.Config
-	uiconf           *cfgui.Config
-	comconf          *cfgcom.Config
+	apiconf *cfgapi.Config
+	uiconf  *cfgui.Config
+	comconf *cfgcom.Config
 
 	exitCh  chan int
 	version string

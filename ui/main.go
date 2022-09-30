@@ -7,11 +7,11 @@ import (
 
 	"github.com/gorilla/pat"
 	"github.com/ian-kent/go-log/log"
-	comcfg "github.com/ynori7/mailhog/config"
-	"github.com/ynori7/mailhog/http"
-	"github.com/ynori7/mailhog/ui/assets"
-	"github.com/ynori7/mailhog/ui/config"
-	"github.com/ynori7/mailhog/ui/web"
+	comcfg "github.com/sskorol/mailhog/config"
+	"github.com/sskorol/mailhog/http"
+	"github.com/sskorol/mailhog/ui/assets"
+	"github.com/sskorol/mailhog/ui/config"
+	"github.com/sskorol/mailhog/ui/web"
 )
 
 var (

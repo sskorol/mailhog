@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/ynori7/mailhog/data"
+	"github.com/sskorol/mailhog/data"
 )
 
 func TestProtocol(t *testing.T) {

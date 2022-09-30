@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ynori7/mailhog/data"
+	"github.com/sskorol/mailhog/data"
 )
 
 // Maildir is a maildir storage backend
