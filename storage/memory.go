@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ynori7/mailhog/data"
+	"github.com/sskorol/mailhog/data"
 )
 
 // InMemory is an in memory storage backend
@@ -53,7 +53,7 @@ func (memory *InMemory) Store(m *data.Message) (string, error) {
 func (memory *InMemory) Count() int {
 	memory.mu.RLock()
 	defer memory.mu.RUnlock()
-	
+
 	return len(memory.Messages)
 }
 

@@ -5,7 +5,7 @@ Deploying MailHog
 
 You can run MailHog locally from the command line.
 
-    go get github.com/ynori7/mailhog
+    go get github.com/sskorol/mailhog
     mailhog -h
 
 To configure MailHog, use the environment variables or command line flags

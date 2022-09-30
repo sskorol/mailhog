@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/ynori7/mailhog/data"
-	"github.com/ynori7/mailhog/storage"
+	"github.com/sskorol/mailhog/data"
+	"github.com/sskorol/mailhog/storage"
 )
 
 type fakeRw struct {

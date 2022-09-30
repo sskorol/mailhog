@@ -3,7 +3,7 @@ package storage
 import (
 	"log"
 
-	"github.com/ynori7/mailhog/data"
+	"github.com/sskorol/mailhog/data"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
