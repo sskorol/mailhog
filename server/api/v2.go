@@ -2,15 +2,15 @@ package api
 
 import (
 	"encoding/json"
-	"net/http"
-	"strconv"
-
 	"github.com/gorilla/pat"
 	"github.com/ian-kent/go-log/log"
 	"github.com/ynori7/mailhog/data"
 	"github.com/ynori7/mailhog/server/config"
 	"github.com/ynori7/mailhog/server/monkey"
 	"github.com/ynori7/mailhog/server/websockets"
+	"net/http"
+	"sort"
+	"strconv"
 )
 
 // APIv2 implements version 2 of the MailHog API
@@ -114,6 +114,10 @@ func (apiv2 *APIv2) messages(w http.ResponseWriter, req *http.Request) {
 	res.Start = start
 	res.Items = []data.Message(*messages)
 	res.Total = apiv2.config.Storage.Count()
+
+	sort.Slice(res.Items, func(i, j int) bool {
+		return res.Items[i].Created.After(res.Items[j].Created)
+	})
 
 	bytes, _ := json.Marshal(res)
 	w.Header().Add("Content-Type", "text/json")

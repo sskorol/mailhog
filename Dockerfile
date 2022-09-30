@@ -9,7 +9,7 @@ RUN apk --no-cache add --virtual build-dependencies \
     git \
   && mkdir -p /root/gocode \
   && export GOPATH=/root/gocode \
-  && go get github.com/ynori7/mailhog \
+  && go get github.com/sskorol/mailhog \
   && mv /root/gocode/bin/mailhog /usr/local/bin \
   && rm -rf /root/gocode \
   && apk del --purge build-dependencies
