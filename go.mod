@@ -1,4 +1,4 @@
-module github.com/ynori7/mailhog
+module github.com/sskorol/mailhog
 
 go 1.16
 
